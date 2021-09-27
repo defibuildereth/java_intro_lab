@@ -42,4 +42,17 @@ public class TestPrinter {
         printer.reduceToner(10);
         assertEquals(70, printer.getToner());
     }
+
+    @Test
+    public void reducePaper () {
+        printer.reducePaper(10);
+        assertEquals(40, printer.getPaper());
+    }
+
+    @Test
+    public void doPrint () {
+        printer.doPrint(35);
+        assertEquals(15, printer.getPaper());
+        assertEquals(45, printer.getToner());
+    }
 }

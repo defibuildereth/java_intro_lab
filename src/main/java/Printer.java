@@ -26,4 +26,19 @@ public class Printer {
     public void reduceToner(int amount) {
         this.toner -= amount;
     }
+
+    public void reducePaper(int sheets) {
+        if (canPrint(sheets)) ;
+        {
+            this.paper -= sheets;
+        }
+    }
+
+    public void doPrint(int sheets) {
+        if (canPrint(sheets));
+        {
+            this.reduceToner(sheets);
+            this.reducePaper(sheets);
+        }
+    }
 }

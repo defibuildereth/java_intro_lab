@@ -17,5 +17,15 @@ public class TestPrinter {
         assertEquals(50, printer.getPaper());
     }
 
+    @Test
+    public void canPrintTrue () {
+        assertEquals(true, printer.canPrint(49));
+    }
+
+    @Test
+    public void canPrintFalse () {
+        assertEquals(false, printer.canPrint(51));
+    }
+
 
 }

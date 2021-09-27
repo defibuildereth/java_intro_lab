@@ -8,4 +8,8 @@ public class Printer {
     public int getPaper() {
         return this.paper;
     }
+
+    public boolean canPrint(int sheetsRequired) {
+        return sheetsRequired <= this.paper;
+    }
 }

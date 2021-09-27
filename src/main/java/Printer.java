@@ -12,4 +12,8 @@ public class Printer {
     public boolean canPrint(int sheetsRequired) {
         return sheetsRequired <= this.paper;
     }
+
+    public int sheetsRequired(int i, int i1) {
+        return i * i1;
+    }
 }

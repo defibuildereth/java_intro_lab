@@ -27,5 +27,10 @@ public class TestPrinter {
         assertEquals(false, printer.canPrint(51));
     }
 
+    @Test
+    public void sheetsRequired () {
+        assertEquals(49, printer.sheetsRequired(7, 7));
+    }
+
 
 }

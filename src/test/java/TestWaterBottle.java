@@ -22,4 +22,17 @@ public class TestWaterBottle {
         waterbottle.drink();
         assertEquals(90, waterbottle.getVolume());
     }
+
+    @Test
+    public void canDrinkTwice() {
+        waterbottle.drink();
+        waterbottle.drink();
+        assertEquals(80, waterbottle.getVolume());
+    }
+
+    @Test
+    public void canEmpty() {
+        waterbottle.empty();
+        assertEquals(0, waterbottle.getVolume());
+    }
 }
